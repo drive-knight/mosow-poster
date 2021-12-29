@@ -27,7 +27,7 @@ def create_place(data: dict):
             Image.objects.create(place=place, image=image_file)
         except RequestException as exc:
             print(f'Запрос к {img_url} не прошёл - {exc}')
-            print(f'Создана запись о локации {place.title}')
+    print(f'Создана запись о локации {place.title}')
     return True
 
 
